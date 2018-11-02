@@ -18,7 +18,7 @@ def menu
 
   case mode
   when "0"
-    Game.new(Players::Computer.new("X"), Players::Computer("O"), Board.new)
+    game = Game.new(Players::Computer.new("X"), Players::Computer("O"), Board.new)
   when "1"
     puts "Who will go first (X)? Type '1' for PLAYER or '2' for COMPUTER:"
     first_player = gets.input
@@ -30,9 +30,9 @@ def menu
 
     case first_player
     when "1"
-      Game.new(Players::Human.new("X"), Players::Computer("O"), Board.new)
+      game = Game.new(Players::Human.new("X"), Players::Computer("O"), Board.new)
     when "2"
-      Game.new(Players::Computer.new("X"), Players::Human("O"), Board.new)
+      game = Game.new(Players::Computer.new("X"), Players::Human("O"), Board.new)
     end
   when "2"
     puts "Who will go first (X)? Type '1' for PLAYER#1 or '2' for PLAYER#2:"
@@ -45,9 +45,9 @@ def menu
 
     case first_player
     when "1"
-      Game.new(Players::Human.new("X"), Players::Human("O"), Board.new)
+      game = Game.new(Players::Human.new("X"), Players::Human("O"), Board.new)
     when "2"
-      Game.new(Players::Human.new("O"), Players::Human("X"), Board.new)
+      game = Game.new(Players::Human.new("O"), Players::Human("X"), Board.new)
     end
   when "wargames"
     # 2.times do
