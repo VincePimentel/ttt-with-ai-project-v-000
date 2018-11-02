@@ -2,17 +2,22 @@
 
 require_relative '../config/environment'
 
-def menu
-  puts "Welcome to Tic-Tac-Toe!"
-  puts "Please select number of players (0, 1, 2, wargames):"
-  puts "Type '0' to start a game between two (2) computers"
-  puts "Type '1' to start a game versus the computer"
-  puts "Type '2' to start a game with two (2) players"
-  puts "Type 'wargames' to simulate 100 games of Tic-Tac-Toe between two (2) computer AI"
+puts "======================="
+puts "Welcome to Tic-Tac-Toe!"
+puts "======================="
+
+def start
+  puts " "
+  puts "Please select number of players (0 | 1 | 2 | wargames):"
+  puts "    Type '0' to start a game between two (2) computers"
+  puts "    Type '1' to start a game versus the computer"
+  puts "    Type '2' to start a game with two (2) players"
+  puts "    Type 'wargames' to simulate 100 games of Tic-Tac-Toe between two (2) computer AI"
+  puts " "
   mode = gets.strip
 
   until mode == "0" || mode == "1" || mode == "2" || mode == "wargames"
-    puts "Please select number of players (0, 1, 2, wargames):"
+    puts "Please select number of players (0 | 1 | 2 | wargames):"
     mode = gets.strip
   end
 
@@ -57,4 +62,11 @@ def menu
   end
 end
 
-menu
+def restart
+  puts "Would you like to play again? (y/n)"
+  response = gets.strip
+
+  
+end
+
+start
