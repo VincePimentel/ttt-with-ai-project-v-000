@@ -63,7 +63,15 @@ def start
 end
 
 def restart
-  puts "Would you like to play again? (y | n)"
+  
+  puts "  _____          __  __ ______    ______      ________ _____  "
+  puts " / ____|   /\   |  \/  |  ____|  / __ \ \    / /  ____|  __ \ "
+  puts "| |  __   /  \  | \  / | |__    | |  | \ \  / /| |__  | |__) |"
+  puts "| | |_ | / /\ \ | |\/| |  __|   | |  | |\ \/ / |  __| |  _  / "
+  puts "| |__| |/ ____ \| |  | | |____  | |__| | \  /  | |____| | \ \ "
+  puts " \_____/_/    \_\_|  |_|______|  \____/   \/   |______|_|  \_\"
+  
+  puts "Game over! Play again? (y | n)"
   response = gets.strip.downcase
 
   case response
