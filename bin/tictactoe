@@ -63,7 +63,9 @@ end
 
 def restart
   puts " "
+  puts "========="
   puts "Game Over"
+  puts "========="
   puts "Play again? (y | n)"
   puts " "
   response = gets.strip.downcase
