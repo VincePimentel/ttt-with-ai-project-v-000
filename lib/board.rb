@@ -12,6 +12,7 @@ class Board
   end
 
   def display
+    puts " "
     puts "==========="
     puts " #{cells[0]} | #{cells[1]} | #{cells[2]} "
     puts "-----------"
@@ -19,6 +20,7 @@ class Board
     puts "-----------"
     puts " #{cells[6]} | #{cells[7]} | #{cells[8]} "
     puts "==TURN: #{turn_count}=="
+    puts " "
   end
 
   def position(input)
