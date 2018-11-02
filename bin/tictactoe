@@ -34,10 +34,10 @@ def start
 
     case first_player
     when "1"
-      Game.new(Player::Human.new("X"), Player::Computer("O"), Board.new).play
+      Game.new(Player::Human.new("X"), Player::Computer.new("O"), Board.new).play
       restart
     when "2"
-      Game.new(Player::Computer.new("X"), Player::Human("O"), Board.new).play
+      Game.new(Player::Computer.new("X"), Player::Human.new("O"), Board.new).play
       restart
     end
   when "2"
