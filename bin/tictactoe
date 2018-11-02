@@ -14,7 +14,7 @@ def start
   puts "    Type '2' to start a game with two (2) players"
   puts "    Type 'wargames' to simulate 100 games of Tic-Tac-Toe between two (2) computer AI"
   puts " "
-  mode = gets.strip
+  mode = gets.strip.downcase
 
   until mode == "0" || mode == "1" || mode == "2" || mode == "wargames"
     puts "Please select number of players (0 | 1 | 2 | wargames):"
@@ -44,7 +44,7 @@ def start
     first_player = gets.input
 
     until first_player == "1" || first_player == "2"
-      puts "Who will go first (X)? Type '1' for PLAYER#1 or '2' for PLAYER#2:"
+      puts "Who will go first (X)? (1 for PLAYER#1 | 2 for PLAYER#2):"
       first_player = gets.input
     end
 
@@ -63,7 +63,7 @@ def start
 end
 
 def restart
-  puts "Would you like to play again? (y/n)"
+  puts "Would you like to play again? (y | n)"
   response = gets.strip
 
 
