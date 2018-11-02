@@ -29,7 +29,7 @@ def start
     first_player = gets.input
 
     until first_player == "1" || first_player == "2"
-      puts "Who will go first (X)? Type '1' for PLAYER or '2' for COMPUTER:"
+      puts "Who will go first (X)? (1 for PLAYER | 2 for COMPUTER):"
       first_player = gets.input
     end
 
@@ -40,7 +40,7 @@ def start
       game = Game.new(Players::Computer.new("X"), Players::Human("O"), Board.new)
     end
   when "2"
-    puts "Who will go first (X)? Type '1' for PLAYER#1 or '2' for PLAYER#2:"
+    puts "Who will go first (X)? (1 for PLAYER#1 | 2 for PLAYER#2):"
     first_player = gets.input
 
     until first_player == "1" || first_player == "2"
@@ -66,7 +66,7 @@ def restart
   puts "Would you like to play again? (y/n)"
   response = gets.strip
 
-  
+
 end
 
 start
