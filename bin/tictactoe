@@ -52,4 +52,5 @@ when "wargames"
   # 2.times do
   #   Game.new(Players::Computer.new("X"), Players::Computer("O"), Board.new)
   # end
+  "Under construction!"
 end
