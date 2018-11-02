@@ -2,11 +2,10 @@
 
 require_relative '../config/environment'
 
-puts "======================="
-puts "Welcome to Tic-Tac-Toe!"
-puts "======================="
-
 def start
+  puts "======================="
+  puts "Welcome to Tic-Tac-Toe!"
+  puts "======================="
   puts " "
   puts "Please select number of players (0 | 1 | 2 | wargames):"
   puts "    Type '0' to start a game between two (2) computers"
