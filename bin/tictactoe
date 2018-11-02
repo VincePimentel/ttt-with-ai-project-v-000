@@ -66,6 +66,12 @@ def restart
   puts "Would you like to play again? (y | n)"
   response = gets.strip.downcase
 
+  case response
+  when "y" then start
+  when "n" then "Thank you for playing. See you next time!"
+  else restart    
+  end
+
 
 end
 
