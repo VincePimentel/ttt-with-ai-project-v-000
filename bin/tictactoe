@@ -51,10 +51,10 @@ def start
 
     case first_player
     when "1"
-      Game.new(Player::Human.new("X"), Player::Human("O"), Board.new).play
+      Game.new(Player::Human.new("X"), Player::Human.new("O"), Board.new).play
       restart
     when "2"
-      Game.new(Player::Human.new("O"), Player::Human("X"), Board.new).play
+      Game.new(Player::Human.new("O"), Player::Human.new("X"), Board.new).play
       restart
     end
   when "wargames"
