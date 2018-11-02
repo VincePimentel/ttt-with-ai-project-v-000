@@ -22,7 +22,7 @@ def start
 
   case mode
   when "0"
-    Game.new(Player::Computer.new("X"), Player::Computer("O"), Board.new).play
+    Game.new(Player::Computer.new("X"), Player::Computer.new("O"), Board.new).play
   when "1"
     puts "Who will go first (X)? (1 for PLAYER | 2 for COMPUTER):"
     first_player = gets.input
