@@ -69,10 +69,8 @@ def restart
   case response
   when "y" then start
   when "n" then "Thank you for playing. See you next time!"
-  else restart    
+  else restart
   end
-
-
 end
 
 start
