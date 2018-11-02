@@ -52,7 +52,7 @@ def start
     when "1"
       Game.new(Players::Human.new("X"), Players::Human("O"), Board.new).play
     when "2"
-      game = Game.new(Players::Human.new("O"), Players::Human("X"), Board.new)
+      Game.new(Players::Human.new("O"), Players::Human("X"), Board.new).play
     end
   when "wargames"
     # 2.times do
