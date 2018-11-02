@@ -49,7 +49,7 @@ when "2"
     Game.new(Players::Human.new("O"), Players::Human("X"), Board.new)
   end
 when "wargames"
-  2.times do
-    Game.new(Players::Computer.new("X"), Players::Computer("O"), Board.new)
-  end
+  # 2.times do
+  #   Game.new(Players::Computer.new("X"), Players::Computer("O"), Board.new)
+  # end
 end
