@@ -81,4 +81,4 @@ def restart
   end
 end
 
-restart
+start
