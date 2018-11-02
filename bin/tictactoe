@@ -18,7 +18,7 @@ def start
 
   until mode == "0" || mode == "1" || mode == "2" || mode == "wargames"
     puts "Please select number of players (0 | 1 | 2 | wargames):"
-    mode = gets.strip
+    mode = gets.strip.downcase
   end
 
   case mode
