@@ -35,8 +35,10 @@ def start
     case first_player
     when "1"
       Game.new(Players::Human.new("X"), Players::Computer("O"), Board.new).play
+      restart
     when "2"
       Game.new(Players::Computer.new("X"), Players::Human("O"), Board.new).play
+      restart
     end
   when "2"
     puts "Who will go first (X)? (1 for PLAYER#1 | 2 for PLAYER#2):"
@@ -50,8 +52,10 @@ def start
     case first_player
     when "1"
       Game.new(Players::Human.new("X"), Players::Human("O"), Board.new).play
+      restart
     when "2"
       Game.new(Players::Human.new("O"), Players::Human("X"), Board.new).play
+      restart
     end
   when "wargames"
     # 2.times do
