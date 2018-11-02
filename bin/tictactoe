@@ -62,7 +62,10 @@ def start
 end
 
 def restart
-  puts "Game over! Play again? (y | n)"
+  puts " "
+  puts "Game Over"
+  puts "Play again? (y | n)"
+  puts " "
   response = gets.strip.downcase
 
   case response
